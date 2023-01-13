@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="ax--site-grid">
+        <a href="#" class="logo">
+            <img src="images/Axendo-full-logo-white.svg" alt="Logo Axendo" width="180">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Platformen</a></li>
+                <li><a href="#">Websites</a></li>
+                <li><a href="#">Portals</a></li>
+                <li>
+                    <button class="btn --primary">
+                        <span>Menu</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+     </div>
+    </header>
+
+    <section class="banner">
+        <div class="ax--site-grid">
+            <div class="blob">
+                <svg viewBox="-50 25 200 200">
+                    <defs>
+                        <radialGradient id="myGradient" x="-20%" y="-20%">
+                            <stop offset="0%" stop-color="var(--startColor)" />
+                            <stop offset="100%" stop-color="var(--stopColor)" />
+                          </radialGradient>
+                      <filter id="f1" x="-10%" y="-10%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                      </filter>
+                    </defs>
+                    <path d="" fill="url(#myGradient)"></path>
+                  </svg>
+
+            </div>
+
+            <div class="banner-content">
+                <div class="banner-content--container">
+                    <div class="banner-content--scroll">
+                        <h1>Jullie werk is cruciaal voor duizenden mensen</h1>
+                        <h1>Wij maken het makkelijker met digitale platformen</h1>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#mainContent" class="banner-moreInfo">
+                Ontdek hoe we dit makkelijker maken
+            </a>
+        </div>
+
+    </section>
+
+    <main id="mainContent">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, mollitia? Molestias inventore sequi id dolore obcaecati mollitia amet incidunt officia porro asperiores, pariatur expedita iure labore accusamus unde dolorum repudiandae.
+    </main>
+
+
+    <script src="js/script.js"></script>
+    <script type="module" src="js/blob.js"></script>
+    <script type="module" src="js/header-textCarousel.js"></script>
+</body>
+</html>
