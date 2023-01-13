@@ -3,7 +3,7 @@ import SimplexNoise from "https://cdn.skypack.dev/pin/simplex-noise@v2.4.0-QVY6i
 
 const path = document.querySelector("path");
 const root = document.documentElement;
-const step = 35;
+const step = 3;
 let noiseStep = 0.0007;
 
 const simplex = new SimplexNoise();

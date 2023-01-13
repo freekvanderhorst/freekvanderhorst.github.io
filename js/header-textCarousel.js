@@ -39,3 +39,17 @@ if(scrollContainer.length){
     }
 
 }
+
+
+
+// HTML
+{/*
+<div class="banner-content">
+<div class="banner-content--container">
+    <div class="banner-content--scroll">
+        <h1>Jullie werk is cruciaal voor duizenden mensen</h1>
+        <h1>Wij maken het makkelijker met digitale platformen</h1>
+    </div>
+</div>
+</div>
+*/}
