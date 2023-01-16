@@ -23,7 +23,7 @@
                 <li><a href="#">Websites</a></li>
                 <li><a href="#">Portals</a></li>
                 <li>
-                    <button class="btn --primary">
+                    <button class="btn --primary" id="menu--trigger">
                         <span>Menu</span>
                     </button>
                 </li>
@@ -32,6 +32,27 @@
 
      </div>
     </header>
+
+    <nav class="dropdown">
+        <div class="ax--site-grid">
+            <a href="#" class="logo">
+                <img src="images/Axendo-full-logo-white.svg" alt="Logo Axendo" width="180">
+            </a>
+
+            <button class="btn --primary" id="close--dropdown">
+                <span>Sluiten</span>
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Markten</a></li>
+                <li><a href="#">Wat we doen</a></li>
+                <li><a href="#">Inzichten</a></li>
+                <li><a href="#">Werk</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <section class="banner">
         <div class="banner-content --section">
@@ -69,7 +90,8 @@
 
     <script src="js/button3d.js"></script>
     <script src="js/scroll.js"></script>
-    <script type="module" src="js/blob.js"></script>
+    <script src="js/dropdown.js"></script>
+    <!-- <script type="module" src="js/blob.js"></script> -->
     <script type="module" src="js/header-textCarousel.js"></script>
 </body>
 </html>

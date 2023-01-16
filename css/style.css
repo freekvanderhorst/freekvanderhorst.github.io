@@ -27,7 +27,7 @@ header {
   padding: 2.5rem;
 }
 header .logo {
-  grid-column: 3;
+  grid-column: 3/5;
   align-self: center;
   display: inherit;
 }
@@ -50,6 +50,83 @@ header nav ul a {
   line-height: 40px;
   color: #fff;
   text-decoration: none;
+}
+
+.dropdown {
+  inset: 0;
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  background: #000;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.dropdown.--active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 99;
+  transition: opacity 0.2s 0.6s;
+}
+.dropdown .ax--site-grid {
+  padding: 2.5rem;
+  height: 100%;
+  grid-template-rows: auto 1fr;
+}
+.dropdown .ax--site-grid .logo {
+  grid-column: 3/5;
+  align-self: center;
+  display: inherit;
+  align-self: center;
+}
+.dropdown .ax--site-grid .btn {
+  grid-column: -4;
+  align-self: start;
+}
+.dropdown .ax--site-grid .dropdown-menu {
+  grid-column: 4/-4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  grid-gap: 4.1666666667rem;
+}
+.dropdown .ax--site-grid .dropdown-menu li a {
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 4.3333333333rem;
+  font-weight: 600;
+  line-height: 7rem;
+  color: #fff;
+}
+.dropdown .ax--site-grid .dropdown-menu li a:hover {
+  background-color: #19FFBE;
+  background-image: linear-gradient(90deg, #19FFBE, #283782, #19FFBE);
+  background-size: 200%;
+  background-position: right;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#menu--trigger::before {
+  content: "";
+  position: fixed;
+  width: 20px;
+  aspect-ratio: 1;
+  transform: scale(1);
+  background: #000;
+  border-radius: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: transform 0.2s;
+}
+#menu--trigger.--active::before {
+  transform: scale(500);
+  opacity: 1;
+  transition: transform 2s;
 }
 
 .banner {
@@ -188,11 +265,11 @@ header nav ul a {
 }
 .banner .banner-content.--section h2 {
   color: #000;
-  filter: blur(8px);
+  filter: blur(5px);
   transform: scale(0.98);
   transition: all 0.4s;
 }
-.banner .banner-content.--section h2.active {
+.banner .banner-content.--section h2.--active {
   filter: blur(0);
   transform: scale(1);
 }
