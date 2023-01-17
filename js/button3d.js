@@ -38,7 +38,7 @@
         item.style.filter = `drop-shadow(${-calcShadowX}px ${calcShadowY}px 15px ${dropShadowColor})`;
     }
 
-    document.querySelectorAll('.btn').forEach(function(item) {
+    document.querySelectorAll('.--3d').forEach(function(item) {
         item.addEventListener('mouseenter', function(e) {
             calculateAngle(e, this.querySelector('span'), this);
         });

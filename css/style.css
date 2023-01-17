@@ -18,26 +18,33 @@ body {
   padding: 0;
   margin: 0;
   min-height: 200vh;
+  background: #fff;
 }
 body.--menu-open {
   overflow: hidden;
 }
+body.--darkHeader #main-header .logo {
+  filter: invert(1);
+}
+body.--darkHeader #main-header nav ul a {
+  color: #000;
+}
 
-header {
+#main-header {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 99;
   padding: 2.5rem;
 }
-header .logo {
+#main-header .logo {
   grid-column: 3/5;
   align-self: center;
   display: inherit;
 }
-header nav {
+#main-header nav {
   grid-column: -4;
 }
-header nav ul {
+#main-header nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -45,10 +52,10 @@ header nav ul {
   align-items: center;
   grid-gap: 60px;
 }
-header nav ul a {
+#main-header nav ul a {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.8333333333rem;
   line-height: 40px;
   color: #fff;
@@ -169,6 +176,7 @@ header nav ul a {
   position: absolute;
   inset: 0;
   height: 100vh;
+  overflow: hidden;
 }
 .banner .banner-content .banner-background span {
   background: linear-gradient(-90deg, #283782, #19FFBE);
@@ -354,7 +362,7 @@ header nav ul a {
   color: #fff;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5rem;
   line-height: 28px;
   padding: 8px 48px 8px 16px;
@@ -368,5 +376,6 @@ header nav ul a {
   position: absolute;
   right: 16px;
   top: 50%;
+  font-weight: 600;
   transform: translateY(-50%);
 }/*# sourceMappingURL=style.css.map */

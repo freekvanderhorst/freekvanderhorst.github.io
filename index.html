@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <header>
+    <header id="main-header">
         <div class="ax--site-grid">
         <a href="#" class="logo">
             <img src="images/Axendo-full-logo-white.svg" alt="Logo Axendo" width="180">
@@ -23,7 +23,7 @@
                 <li><a href="#">Websites</a></li>
                 <li><a href="#">Portals</a></li>
                 <li>
-                    <button class="btn --primary" id="menu--trigger">
+                    <button class="btn --primary --3d" id="menu--trigger">
                         <span>Menu</span>
                     </button>
                 </li>
@@ -55,7 +55,7 @@
     </nav>
 
     <section class="banner">
-        <div class="banner-content --section">
+        <div class="banner-content --section --gradient" data-header="white">
             <div class="ax--site-grid">
                 <h1>
                     <span>Jullie werk is cruciaal </span>
@@ -70,13 +70,13 @@
             </div>
         </div>
 
-        <div class="banner-content --section" id="banner-content--heading-secondary">
+        <div class="banner-content --section" id="banner-content--heading-secondary" data-header="black">
             <div class="ax--site-grid">
-                <h2>
-                    <span>Ons <b class="--gradient">team</b> ontwikkelt</span>
-                    <span>maatschappelijke relevante </span>
-                    <span><b class="--gradient">platformen,</b><b>portalen</b> en <b class="--gradient">websites</b></span>
-                    <span>Digitalisering die ertoe doet - noemen wij dat.</span>
+                <h2 >
+                        <span>Ons <b class="--gradient">team</b> ontwikkelt</span>
+                        <span>maatschappelijke relevante </span>
+                        <span><b class="--gradient">platformen,</b><b>portalen</b> en <b class="--gradient">websites</b></span>
+                        <span>Digitalisering die ertoe doet - noemen wij dat.</span>
                 </h2>
             </div>
         </div>
@@ -85,34 +85,34 @@
 
     <main id="mainContent">
 
-        <section class="block">
+        <section class="block" data-header="black">
             <div class="ax--site-grid">
                 <span class="subtitle">Ons werk</span>
                 <h2>Wij zetten complexe problemen om in strategie, technologie en design</h2>
             </div>
         </section>
 
-        <section class="block --gradient --center">
+        <section class="block --gradient --center"  data-header="white">
             <div class="ax--site-grid">
                 <h2>Wij werken graag samen met...</h2>
             </div>
         </section>
 
-        <section class="block">
+        <section class="block" data-header="black">
             <div class="ax--site-grid">
                 <span class="subtitle">Ons werk</span>
                 <h2>Wij zetten complexe problemen om in strategie, technologie en design</h2>
             </div>
         </section>
 
-        <section class="block">
+        <section class="block" data-header="black">
             <div class="ax--site-grid">
                 <span class="subtitle">Ons werk</span>
                 <h2>Wij zetten complexe problemen om in strategie, technologie en design</h2>
             </div>
         </section>
 
-        <section class="block">
+        <section class="block" data-header="black">
             <div class="ax--site-grid">
                 <span class="subtitle">Ons werk</span>
                 <h2>Wij zetten complexe problemen om in strategie, technologie en design</h2>
@@ -125,8 +125,9 @@
     <script src="js/button3d.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/header.js"></script>
     <!-- <script type="module" src="js/blob.js"></script> -->
-    <script type="module" src="js/header-textCarousel.js"></script>
+    <!-- <script type="module" src="js/header-textCarousel.js"></script> -->
 </body>
 </html>
 

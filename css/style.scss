@@ -30,13 +30,23 @@ body{
     padding: 0;
     margin: 0;
     min-height: 200vh;
+    background: #fff;
     &.--menu-open{
         overflow: hidden;
     }
 
+    &.--darkHeader{
+        #main-header .logo{
+            filter: invert(1);
+        }
+        #main-header nav ul a{
+            color: #000;
+        }
+    }
+
 }
 
-header{
+#main-header{
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 99;
@@ -61,7 +71,7 @@ header{
             a{
                 font-family: 'Poppins';
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: rem(22px);
                 line-height: 40px;
                 color: #fff;
@@ -219,6 +229,7 @@ header{
             position: absolute;
             inset: 0;
             height: 100vh;
+            overflow: hidden;
 
             span{
                 background: linear-gradient(-90deg, #283782, #19FFBE);
@@ -384,7 +395,7 @@ header{
     color: #fff;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: rem(18px);
     line-height: 28px;
     padding: 8px 48px 8px 16px;
@@ -400,6 +411,7 @@ header{
         position: absolute;
         right: 16px;
         top: 50%;
+        font-weight: 600;
         transform: translateY(-50%);
     }
 }
